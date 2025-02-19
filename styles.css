@@ -1,15 +1,15 @@
 /* Responsive Styles */
 @media (max-width: 768px) {
     #info {
-        display: flex;
-        flex-direction: column; /* Ensure row layout */
+        flex-direction: column;
         text-align: center;
-        align-iteams: center;
+        align-items: center; /* Fixed typo */
     }
 
     #details, #mission {
-        width: 100%;
+        width: 90%; /* Avoid full width for better readability */
         font-size: 0.9em;
+        max-width: 500px; /* Prevents text from stretching too wide */
     }
 
     #abilitys {
@@ -116,6 +116,7 @@ footer {
     gap: 20px;
     padding: 20px 10px;
     margin: auto;
+    align-items: stretch; /* Ensure both divs are of equal height */
 }
 
 #details, #mission {
@@ -127,9 +128,10 @@ footer {
     font-size: 1em;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    /* border: 3px solid; */
-} 
+    text-align: justify;
+}
 
 #chatbotContainer {
     visibility: hidden;
