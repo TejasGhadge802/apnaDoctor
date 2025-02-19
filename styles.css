@@ -3,15 +3,17 @@
     #info {
         flex-direction: column;
         text-align: center;
-        align-items: center; /* Fixed typo */
+        align-items: center; /* Ensures content is centered */
     }
 
     #details, #mission {
-        width: 90%; /* Avoid full width for better readability */
+        width: 85%; /* Keeps content at a reasonable width */
         font-size: 0.9em;
-        max-width: 500px; /* Prevents text from stretching too wide */
+        max-width: 450px; /* Limits text width for better readability */
+        text-align: center; /* Centers text properly */
+        margin: 10px auto; /* Ensures spacing and centering */
     }
-
+    
     #abilitys {
         flex-direction: column;
         gap: 10px;
