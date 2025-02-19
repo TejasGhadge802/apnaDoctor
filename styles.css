@@ -2,16 +2,15 @@
 @media (max-width: 768px) {
     #info {
         flex-direction: column;
-        text-align: center;
-        align-items: center; /* Ensures content is centered */
+        align-items: center;
     }
 
     #details, #mission {
-        width: 85%; /* Keeps content at a reasonable width */
+        width: 85%;
         font-size: 0.9em;
-        max-width: 450px; /* Limits text width for better readability */
-        text-align: center; /* Centers text properly */
-        margin: 10px auto; /* Ensures spacing and centering */
+        max-width: 450px;
+        text-align: center;
+        margin: 10px auto;
     }
     
     #abilitys {
