@@ -7,8 +7,8 @@
 
     #details, #mission {
         width: 90%;
-        max-width: 100%;
-        font-size: 1.2em;
+/*         max-width: 100%; */
+        font-size: 1.1em;
     }
 
     #abilitys {
@@ -110,30 +110,22 @@ footer {
 /* Extra style for Home page */
 #info {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: center;
+    flex: wrap;
+    gap: 20px;
+    padding: 20px;
 }
 
-#details {
-    margin: 5px 20px;
-    padding: 5px;
-    display: inline-block;
-    width: 50vw;
-    max-height: 50vh;
-    font-size: 1.5em;
+#details, #mission {
+/*     margin: 5px 20px; */
+/*     padding: 5px; */
+/*     display: inline-block; */
+    width: 45%;
+    max-width: 300px;
+    font-size: 1em;
+    text-align: justify;
     /* border: 3px solid; */
-}
-
-#mission {
-    box-sizing: border-box;
-    margin: 5px 20px;
-    padding: 5px;
-    display: inline-block;
-    width: 50vw;
-    max-height: 50vh;
-    font-size: 1.5em;
-    /* border: 3px solid; */
-}
+} 
 
 #chatbotContainer {
     visibility: hidden;
