@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Aapna Doctor</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #abilityContainer {
+            margin: 5px;
+            padding: 10px 10px;
+            font-size: .9rem;
+            /* max-height: 500px; */
+        }
+
+        #abilitys {
+            margin: 5px 0;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .abi {
+            border: 2px solid;
+            padding: 10px;
+        }
+
+        .abi h2:first-child {
+            text-align: center;
+        }
+
+        .abi p {
+            line-height: 25px;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Aapna Doctor</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>AI-Powered Healthcare Solutions</h1>
+        <p>Disease Detection & Preventation</p>
+        <p>Transforming medical diagnostics with advanced AI technology.</p>
+    </section>
+    
+    <section id="info">
+        <section id="details">
+            <h3 style="text-align: center;">About the Aapna Doctor community</h3>
+            <p>Without using loops or recursion, it's nearly impossible to implement a prime check using traditional methods. However, you can achieve it using functional programming and built-in Python functions like filter() or any(), which internally use loops but don't explicitly write them. Without using loops or recursion, it's nearly impossible to implement a prime check using traditional methods. However, you can achieve it using functional programming and built-in Python functions like filter() or any(), which internally use loops but don't explicitly write them.
+            </p>
+        </section>
+
+        <section id="mission">
+            <h3 style="text-align: center;">Our Mission</h3>
+            <img src="" alt="" />
+            <p>Our mission is to utilize AI-based health assessment technologies and assist people with Physical/Mental disorders in diagnosing and treating those issues.</p>
+        </section>
+    </section>
+
+    <section>
+        <button id="openChatbot">Open Chatbot</button>
+
+        <div id="chatbotContainer">
+            <button id="closeChatbot">X</button>
+            <iframe src="https://www.chatbase.co/chatbot-iframe/zbmEPEJM6sq3cO_o3yQZJ" width="100%" style="height: 100%; min-height: 700px" frameborder="0"></iframe>
+        </div>
+    </section>
+
+    <section id="abilityContainer">
+        <h2 style="text-align: center;">Aapna Doctor in 3 words</h2>
+        <div id="abilitys">
+            <div class="abi">
+                <h2>Commitment</h2>
+                <p>MEDIBOT professional and experienced team is fully committed to its clients and make everything possible to improve their mental health and wellbeing.</p>
+            </div>
+            <div class="abi">
+                <h2>Innovation</h2>
+                <p>Our innovative combination of features and diagnostic materials allow our clients to receive the most accurate results and simple methods to overcome the issue.</p>
+            </div>
+            <div class="abi">
+                <h2>Privacy + Data Safety</h2>
+                <p>Our client’s privacy is our priority. MEDIBOT will provide its users with a secure and confidential experience while trusting us during their hard times.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Aapna Doctor. All Rights Reserved.</p>
+    </footer>
+
+
+
+    <script>
+        document.getElementById("openChatbot").addEventListener("click", function() {
+            document.getElementById("chatbotContainer").style.visibility = "visible"; // Show chatbot
+            this.style.visibility = "hidden"; // Hide the Open Button
+        });
+
+        document.getElementById("closeChatbot").addEventListener("click", function() {
+            document.getElementById("chatbotContainer").style.visibility = "hidden"; // Hide chatbot
+            document.getElementById("openChatbot").style.visibility = "visible"; // Show the Open Button again
+        });
+    </script>
+</body>
+
+</html>
