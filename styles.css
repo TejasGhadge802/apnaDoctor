@@ -1,3 +1,35 @@
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #info {
+    flex-direction: column;
+        align-items: center;
+    }
+
+    #details, #mission {
+        width: 90%;
+        max-width: 100%;
+        font-size: 1.2em;
+    }
+
+    #abilitys {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .abi {
+        text-align: center;
+    }
+
+    /* Adjust chatbot for smaller screens */
+    #chatbotContainer {
+        width: 95%;
+        height: 75vh;
+    }
+}
+
+
+
+
 /* Global Styles */
 body {
     font-family: Arial, sans-serif;
