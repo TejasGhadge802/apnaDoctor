@@ -2,13 +2,14 @@
 @media (max-width: 768px) {
     #info {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row; /* Ensure row layout */
+        justify-content: space-between;
+        gap: 5px;
     }
 
     #details, #mission {
-        width: 90%;
-        font-size: 1.1em;
+        width: 50%;
+        font-size: 0.9em;
     }
 
     #abilitys {
