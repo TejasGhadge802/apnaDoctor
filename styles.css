@@ -110,7 +110,7 @@ footer {
 /* Extra style for Home page */
 #info {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex: wrap;
     gap: 20px;
     padding: 20px;
