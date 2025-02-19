@@ -111,7 +111,7 @@ footer {
 #info {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 90%;
     flex: wrap;
     gap: 20px;
     padding: 20px;
