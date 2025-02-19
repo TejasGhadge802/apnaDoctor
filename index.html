@@ -103,17 +103,17 @@
 
 
 
-    <script>
+    <srcipt>
         document.getElementById("openChatbot").addEventListener("click", function() {
-            document.getElementById("chatbotContainer").style.visibility = "visible"; // Show chatbot
-            this.style.visibility = "hidden"; // Hide the Open Button
+        document.getElementById("chatbotContainer").style.visibility = "visible"; // Show chatbot
+        this.style.display = "none"; // Hide the Open Button
         });
-
+    
         document.getElementById("closeChatbot").addEventListener("click", function() {
             document.getElementById("chatbotContainer").style.visibility = "hidden"; // Hide chatbot
-            document.getElementById("openChatbot").style.visibility = "visible"; // Show the Open Button again
+            document.getElementById("openChatbot").style.display = "block"; // Show the Open Button again
         });
-    </script>
+    </srcipt>
 </body>
 
 </html>
