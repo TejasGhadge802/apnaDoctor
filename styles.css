@@ -109,15 +109,15 @@ footer {
 #links{
     /* margin-top: 10px 20px; */
     text-align: center;
-    font-size: 2rem;
+    font-size: 3em;
     display: flex;
     justify-content: space-around;
 }
 #git{
     color: black;
 }
-#linkedin{
-    color: #2700FF;
+#youtube{
+    color: #BF2121;
 }
 #insta{
     color: #CC82FF;
@@ -154,12 +154,12 @@ footer {
 #chatbotContainer {
     visibility: hidden;
     position: fixed;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
     max-width: 450px;
-    height: 80vh;
+    height: 100vh;
     max-height: 700px;
     display: flex;
     flex-direction: column;
