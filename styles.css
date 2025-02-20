@@ -191,3 +191,15 @@ footer {
     cursor: pointer;
     border-radius: 5px;
 }
+
+
+
+
+
+/* icons */
+
+.abi i {
+    font-size: 3.5em;
+    display: block;
+    text-align: center;
+}
