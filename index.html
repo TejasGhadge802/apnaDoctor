@@ -1,139 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Apna Doctor</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - apna Doctor</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <style>
-        #abilityContainer {
-            margin: 5px;
-            padding: 10px 10px;
-            font-size: .9rem;
-            /* max-height: 500px; */
+      marquee span {
+        font-size: 4rem;
+        animation: ambulance linear infinite 2s;
+      }
+      @keyframes ambulance {
+        from {
+            text-shadow: 0px -6px 20px rgb(255, 0, 0);
         }
-
-        #abilitys {
-            margin: 5px 0;
-            display: flex;
-            justify-content: space-between;
-            gap: 20px;
+        to {
+            text-shadow: 0px 0px 0px rgb(255, 0, 0);
         }
-
-        .abi {
-            border: 2px solid;
-            padding: 10px;
-        }
-
-        .abi h2:first-child {
-            text-align: center;
-        }
-
-        .abi p {
-            line-height: 25px;
-        }
-
-        #mission i {
-            font-size: 6em;
-            display: block;
-            text-align: center;
-        }
+      }
     </style>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <div class="logo-container">
-            <img src="logo.png" alt="Apna Doctor Logo" id="logo">
-            <h1>Apna Doctor</h1>
-        </div>
+      <div class="logo-container">
+        <img src="logo.jpeg" alt="Apna Doctor Logo" id="logo" />
+        <h1>Apna Doctor</h1>
+      </div>
 
-        <nav>
-            <ul>
-                <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html"><i class="fa-solid fa-map-location-dot"></i></a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html"><i class="fa-solid fa-house"></i></a>
+          </li>
+          <li>
+            <a href="about.html"><i class="fa-solid fa-info"></i></a>
+          </li>
+          <li>
+            <a href="contact.html"
+              ><i class="fa-solid fa-map-location-dot"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <section class="hero">
-        <h1>AI-Powered Healthcare Solutions</h1>
-        <p>Disease Detection & Preventation</p>
-        <p>Transforming medical diagnostics with advanced AI technology.</p>
+      <h1>AI-Powered Healthcare Solutions</h1>
+      <p>Disease Detection & Precaution</p>
+      <p>Transforming medical diagnostics with advanced AI technology.</p>
+      <marquee><span>🚑</span> 📞108</marquee>
     </section>
 
     <section id="info">
-        <section id="details">
-            <h3 style="text-align: center;">About the Apna Doctor community</h3>
-            <p>Without using loops or recursion, it's nearly impossible to implement a prime check using traditional methods. However, you can achieve it using functional programming and built-in Python functions like filter() or any(), which internally use loops but don't explicitly write them. Without using loops or recursion, it's nearly impossible to implement a prime check using traditional methods. However, you can achieve it using functional programming and built-in Python functions like filter() or any(), which internally use loops but don't explicitly write them.
-            </p>
-        </section>
+      <section id="details">
+        <h3 style="text-align: center">About the Apna Doctor community</h3>
+        <p>
+          Our AI doctor helps to assisting healthcare professionals utilizing
+          advanced algorithms to analyze medical data, assisting healthcare
+          professionals with diagnoses, treatment recommendations, and
+          preventative measures, ultimately aiming to improve patient care and
+          access to quality healthcare, <b>Especially in Underserved Areas</b> .
+        </p>
+      </section>
 
-        <section id="mission">
-            <h3 style="text-align: center;">Our Mission</h3>
-            <i class="fa-solid fa-bullseye"></i>
-            <p>Our mission is to utilize AI-based health assessment technologies and assist people with Physical/Mental disorders in diagnosing and treating those issues.</p>
-        </section>
-    </section>
-
-    <section>
-        <button id="openChatbot">Open Chatbot</button>
-
-        <div id="chatbotContainer">
-            <button id="closeChatbot">X</button>
-            <iframe src="https://www.chatbase.co/chatbot-iframe/zbmEPEJM6sq3cO_o3yQZJ" width="100%" style="height: 100%; min-height: 700px" frameborder="0"></iframe>
-        </div>
+      <section id="mission">
+        <h3 style="text-align: center">Our Mission</h3>
+        <i class="fa-solid fa-bullseye"></i>
+        <p>
+          Our mission is to utilize AI-based health assessment technologies and
+          assist people with Physical/Mental disorders in diagnosing and
+          treating those issues.
+        </p>
+      </section>
     </section>
 
     <section id="abilityContainer">
-        <h2 style="text-align: center;">Apna Doctor in 3 words</h2>
-        <div id="abilitys">
-            <div class="abi">
-                <h2>Commitment</h2>
-                <i class="fa-regular fa-handshake"></i>
-                <p>MEDIBOT professional and experienced team is fully committed to its clients and make everything possible to improve their mental health and wellbeing.</p>
-            </div>
-            <div class="abi">
-                <h2>Innovation</h2>
-                <i class="fa-regular fa-lightbulb" id="innovation"></i>
-                <p>Our innovative combination of features and diagnostic materials allow our clients to receive the most accurate results and simple methods to overcome the issue.</p>
-            </div>
-            <div class="abi">
-                <h2>Privacy + Data Safety</h2>
-                <i class="fa-solid fa-shield-halved"></i>
-                <p>Our client’s privacy is our priority. MEDIBOT will provide its users with a secure and confidential experience while trusting us during their hard times.</p>
-            </div>
+      <h2 style="text-align: center">Apna Doctor in 3 words</h2>
+      <div id="abilitys">
+        <div class="abi">
+          <h2>Commitment</h2>
+          <i class="fa-regular fa-handshake"></i>
+          <p>
+            MEDIBOT professional and experienced team is fully committed to its
+            clients and makes everything possible to improve their mental health
+            and well-being.
+          </p>
         </div>
+        <div class="abi">
+          <h2>Innovation</h2>
+          <i class="fa-regular fa-lightbulb" id="innovation"></i>
+          <p>
+            Our innovative combination of features and diagnostic materials
+            allows our clients to receive the most accurate results and simple
+            methods to overcome the issue.
+          </p>
+        </div>
+        <div class="abi">
+          <h2>Privacy + Data Safety</h2>
+          <i class="fa-solid fa-shield-halved"></i>
+          <p>
+            Our client’s privacy is our priority. MEDIBOT will provide its users
+            with a secure and confidential experience while trusting us during
+            their hard times.
+          </p>
+        </div>
+      </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 apna Doctor. All Rights Reserved.</p>
+      <p>&copy; 2025 Apna Doctor. All Rights Reserved.</p>
 
-        <div id="links">
-            <p><a id="git" href="https://github.com/TejasGhadge802"><i class="fa-brands fa-github"></i></a></p>
-            <p><a id="youtube" href="https://www.linkedin.com/in/tejas-ghadge-3104a0301?"><i class="fa-brands fa-youtube"></i></a></p>
-            <p><a id="insta" href="https://www.instagram.com/tejas_ghadge_80"><i class="fa-brands fa-instagram"></i></a></p>
-        </div>
-
+      <div id="links">
+        <p>
+          <a id="git" href="https://github.com/TejasGhadge802"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </p>
+        <p>
+          <a id="youtube" href="https://www.youtube.com"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </p>
+        <p>
+          <a id="insta" href="https://www.instagram.com/tejas_ghadge_80"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </p>
+      </div>
     </footer>
 
+    <!-- Chatbot Container -->
+    <div class="chat-container" id="chatbotContainer">
+      <div class="chat-header">
+        <div class="bot-info" style="text-align: center">
+          <img
+            src="logo.jpeg"
+            alt="Bot Avatar"
+            class="botavatar"
+            style="height: 12vw"
+          />
+          <p>Aapna Bot</p>
+        </div>
+        <button id="closeChatbot" class="close-btn">✖</button>
+      </div>
+      <div id="chat-box" class="chat-box">
+        <div class="chat-message bot">
+          <p>Hi! What can I help you with?</p>
+        </div>
+      </div>
+      <div class="chat-input">
+        <input type="file" id="user-input2" accept="image/*" />
+        <input
+          type="text"
+          id="user-input"
+          placeholder="Message..."
+          autocomplete="off"
+        />
+        <button id="send-btn">➤</button>
+      </div>
+    </div>
 
+    <!-- Chatbot Icon to Open -->
+    <img
+      src="logo.jpeg"
+      alt="Bot Avatar"
+      id="bot-avatar"
+      class="bot-avatar"
+      style="position: fixed; bottom: 20px; right: 20px; cursor: pointer"
+    />
 
     <script>
-        document.getElementById("openChatbot").addEventListener("click", function() {
-            document.getElementById("chatbotContainer").style.visibility = "visible"; // Show chatbot
-            this.style.visibility = "hidden"; // Hide the Open Button
-        });
+      // Open and close chatbot
+      const openChatbot = document.getElementById("bot-avatar");
+      const closeChatbot = document.getElementById("closeChatbot");
+      const chatbotContainer = document.getElementById("chatbotContainer");
 
-        document.getElementById("closeChatbot").addEventListener("click", function() {
-            document.getElementById("chatbotContainer").style.visibility = "hidden"; // Hide chatbot
-            document.getElementById("openChatbot").style.visibility = "visible"; // Show the Open Button again
-        });
+      // Show the chatbot when clicking on the bot icon
+      openChatbot.style.display = "block"; // Show the icon initially
+      openChatbot.addEventListener("click", () => {
+        chatbotContainer.style.visibility = "visible";
+        openChatbot.style.display = "none"; // Hide the bot icon once the chat is opened
+      });
+
+      // Close the chatbot when clicking on the close button
+      closeChatbot.addEventListener("click", () => {
+        chatbotContainer.style.visibility = "hidden";
+        openChatbot.style.display = "block"; // Show the bot icon again when chat is closed
+      });
     </script>
-</body>
-
+  </body>
 </html>
