@@ -175,18 +175,13 @@ footer {
 }
 
 #chatbotContainer {
-    visibility: hidden; /* Hidden by default */   
+    visibility: hidden;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* width: 90%; */
     width: 350px;
-    bottom: 80px;
-    right: 20px;
     max-width: 450px;
-    height: 450px;
-    /* height: 100vh; */
     max-height: 700px;
     display: flex;
     flex-direction: column;
@@ -195,6 +190,7 @@ footer {
     background: white;
     padding: 10px;
 }
+
 
 
 #closeChatbot {
@@ -238,7 +234,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px;
+    padding: 3px;
 }
 
 /* Chatbox and input area */
@@ -253,7 +249,8 @@ footer {
 
 .chat-input {
     display: flex;
-    padding: 10px;
+    justify-content: center;
+    padding: 5px;
     border-top: 1px solid #ddd;
     background: white;
     align-items: center;
@@ -269,6 +266,7 @@ footer {
 
 #user-input2 {
     flex: 1;
+    width: 8vw;
 }
 
 .chat-input button {
